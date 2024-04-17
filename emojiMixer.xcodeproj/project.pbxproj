@@ -10,9 +10,9 @@
 		3E97BF8A2BD017E400CF3A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97BF892BD017E400CF3A7F /* AppDelegate.swift */; };
 		3E97BF8C2BD017E400CF3A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97BF8B2BD017E400CF3A7F /* SceneDelegate.swift */; };
 		3E97BF8E2BD017E400CF3A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97BF8D2BD017E400CF3A7F /* ViewController.swift */; };
-		3E97BF912BD017E400CF3A7F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3E97BF902BD017E400CF3A7F /* Base */; };
 		3E97BF932BD017E600CF3A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E97BF922BD017E600CF3A7F /* Assets.xcassets */; };
 		3E97BF962BD017E600CF3A7F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3E97BF952BD017E600CF3A7F /* Base */; };
+		3E97BF9E2BD0195100CF3A7F /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97BF9D2BD0195100CF3A7F /* EmojiCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		3E97BF892BD017E400CF3A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E97BF8B2BD017E400CF3A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3E97BF8D2BD017E400CF3A7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3E97BF902BD017E400CF3A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E97BF922BD017E600CF3A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E97BF952BD017E600CF3A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E97BF972BD017E600CF3A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E97BF9D2BD0195100CF3A7F /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 		3E97BF882BD017E400CF3A7F /* emojiMixer */ = {
 			isa = PBXGroup;
 			children = (
+				3E97BF9D2BD0195100CF3A7F /* EmojiCell.swift */,
 				3E97BF892BD017E400CF3A7F /* AppDelegate.swift */,
 				3E97BF8B2BD017E400CF3A7F /* SceneDelegate.swift */,
 				3E97BF8D2BD017E400CF3A7F /* ViewController.swift */,
-				3E97BF8F2BD017E400CF3A7F /* Main.storyboard */,
 				3E97BF922BD017E600CF3A7F /* Assets.xcassets */,
 				3E97BF942BD017E600CF3A7F /* LaunchScreen.storyboard */,
 				3E97BF972BD017E600CF3A7F /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				3E97BF932BD017E600CF3A7F /* Assets.xcassets in Resources */,
 				3E97BF962BD017E600CF3A7F /* Base in Resources */,
-				3E97BF912BD017E400CF3A7F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +139,7 @@
 			files = (
 				3E97BF8E2BD017E400CF3A7F /* ViewController.swift in Sources */,
 				3E97BF8A2BD017E400CF3A7F /* AppDelegate.swift in Sources */,
+				3E97BF9E2BD0195100CF3A7F /* EmojiCell.swift in Sources */,
 				3E97BF8C2BD017E400CF3A7F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3E97BF8F2BD017E400CF3A7F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E97BF902BD017E400CF3A7F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E97BF942BD017E600CF3A7F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +289,9 @@
 				INFOPLIST_FILE = emojiMixer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +299,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = folawer21.emojiMixer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +321,9 @@
 				INFOPLIST_FILE = emojiMixer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +331,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = folawer21.emojiMixer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
